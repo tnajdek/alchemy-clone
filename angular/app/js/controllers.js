@@ -1,12 +1,6 @@
-'use strict';
-
-/* Controllers */
-
-
-function MyCtrl1() {}
-MyCtrl1.$inject = [];
-
-
-function MyCtrl2() {
-}
-MyCtrl2.$inject = [];
+define([ 'app'], function (app) {
+	'use strict';
+	app.controller('MyCtrl1', function () {});
+	app.controller('MyCtrl2', function () {});
+	return app;
+});

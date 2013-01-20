@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" ng-app="alchemy">
+<head>
+	<meta charset="utf-8">
+	<title>My AngularJS App</title>
+	<script data-main="{{STATIC_URL}}js/main" src="{{STATIC_URL}}lib/require.js"></script>
+</head>
+<body>
+	<ul class="menu">
+		<li><a href="#/itembuilder">Item Builder</a></li>
+		<li><a href="#/recipebuilder">Recipe Builder</a></li>
+		<li><a href="#/challenge">Challenge</a></li>
+	</ul>
+
+	<div ng-view></div>
+
+	<div>Angular seed app: v<span app-version></span></div>
+
+
+</body>
+</html>

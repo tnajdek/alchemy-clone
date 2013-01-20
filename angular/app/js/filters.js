@@ -1,10 +1,9 @@
-'use strict';
+define(['app'], function(app) {
+	'use strict';
 
-/* Filters */
-
-angular.module('myApp.filters', []).
-  filter('interpolate', ['version', function(version) {
-    return function(text) {
-      return String(text).replace(/\%VERSION\%/mg, version);
-    }
-  }]);
+	app.filter('interpolate', ['version', function(version) {
+		return function(text) {
+			return String(text).replace(/\%VERSION\%/mg, version);
+		};
+	}]);
+});

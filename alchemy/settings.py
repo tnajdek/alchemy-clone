@@ -1,4 +1,10 @@
 # Django settings for alchemy project.
+import os
+import sys
+
+SITE_ROOT = os.path.dirname(os.path.realpath(__file__)) + '/../'
+rel = lambda p: os.path.join(SITE_ROOT, p)
+
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -64,6 +70,8 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
+    SITE_ROOT + '/common',
+    SITE_ROOT + '/angular/app'
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
