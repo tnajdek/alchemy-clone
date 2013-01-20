@@ -1,6 +1,17 @@
-define([ 'app'], function (app) {
+define(['app'], function (app) {
 	'use strict';
-	app.controller('MyCtrl1', function () {});
-	app.controller('MyCtrl2', function () {});
+	app.controller('Itembuilder', function () {
+		console.log('dsadsd');
+
+	});
+	app.controller('Recipebuilder', function () {
+
+	});
+	app.controller('Challenge', function () {
+
+	});
+	app.controller('Main', function () {
+
+	});
 	return app;
 });
